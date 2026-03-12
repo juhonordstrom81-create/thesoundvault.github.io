@@ -172,9 +172,9 @@ header {
     .column {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr 140px;
         grid-gap: 15px;
-        align-items: start;
+        align-items: center;
     }
     
     .column h3 {
@@ -184,18 +184,45 @@ header {
     .column p {
         grid-column: 1;
         grid-row: 2;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        text-align: left;
     }
     
     .producer-image {
         grid-column: 2;
         grid-row: 2;
         width: 100%;
-        max-width: 150px;
+        max-width: 140px;
         height: auto;
+        margin-bottom: 0;
     }
     
     .column a {
         grid-column: 1 / -1;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .column {
+        grid-template-columns: 1fr;
+    }
+
+    .column p,
+    .producer-image,
+    .column a {
+        grid-column: 1;
+    }
+
+    .producer-image {
+        grid-row: 3;
+        max-width: 170px;
+        margin: 0 auto;
+    }
+
+    .column a {
+        grid-row: 4;
     }
 }
 
