@@ -134,6 +134,7 @@ header {
 }
 
 .row .column h3 {
+    font-size: 22px;
     margin-bottom: 8px;
 }
 
@@ -228,9 +229,13 @@ header {
     }
 
     .producer-image {
-        grid-row: 3;
+        grid-row: 2;
         max-width: 170px;
         margin: 0 auto;
+    }
+
+    .column p {
+        grid-row: 3;
     }
 
     .column a {
