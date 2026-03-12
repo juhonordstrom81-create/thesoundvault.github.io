@@ -134,6 +134,7 @@ header {
 }
 
 .row .column h3 {
+    font-size: 22px;
     margin-bottom: 8px;
 }
 
@@ -143,20 +144,6 @@ header {
 
 .row .producer-image {
     margin-bottom: 6px;
-}
-
-@media screen and (min-width: 769px) {
-    .row .column h3 {
-        font-size: 22px;
-    }
-
-    .row .producer-image {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        display: block;
-        margin: 0 auto 6px;
-    }
 }
 
 .column a {
