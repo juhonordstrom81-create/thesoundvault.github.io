@@ -219,41 +219,27 @@ header {
 
 @media screen and (max-width: 520px) {
     .column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
+        grid-template-columns: 1fr;
     }
 
-    .column h3,
-    .producer-image,
     .column p,
+    .producer-image,
     .column a {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
-    .column h3 {
-        order: 1;
-        margin-bottom: 0;
+        grid-column: 1;
     }
 
     .producer-image {
-        order: 2;
+        grid-row: 2;
         max-width: 170px;
         margin: 0 auto;
     }
 
     .column p {
-        order: 3;
-        width: 100%;
-        margin-bottom: 4px;
-        text-align: left;
+        grid-row: 3;
     }
 
     .column a {
-        order: 4;
-        margin-top: 0;
+        grid-row: 4;
     }
 }
 
